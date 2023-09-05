@@ -46,6 +46,68 @@ export default [
     ],
   },
   {
+    path: '/test',
+    name: 'test',
+    icon: 'antDesign',
+    routes: [
+      {
+        path: '/test',
+        redirect: '/test/test1',
+      },
+      {
+        path: '/test/test1',
+        name: 'test1',
+        component: './TableList',
+      },
+      {
+        path: '/test/test2',
+        name: 'test2',
+        routes: [
+          {
+            path: '/test/test2',
+            redirect: '/test/test2/sub1',
+          },
+          {
+            path: '/test/test2/sub1',
+            name: 'sub1',
+          },
+          {
+            path: '/test/test2/sub2',
+            name: 'sub2',
+          },
+          {
+            path: '/test/test2/sub3',
+            name: 'sub3',
+          },
+        ],
+      },
+      {
+        path: '/test/test3',
+        name: 'test3',
+      },
+      {
+        path: '/test/test4',
+        name: 'test4',
+      },
+      {
+        path: '/test/test5',
+        name: 'test5',
+      },
+      {
+        path: '/test/test6',
+        name: 'test6',
+      },
+      {
+        path: '/test/test7',
+        name: 'test7',
+      },
+      {
+        path: '/test/test8',
+        name: 'test8',
+      },
+    ],
+  },
+  {
     name: 'list.table-list',
     icon: 'table',
     path: '/list',
